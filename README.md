@@ -4,7 +4,7 @@ A machine learning project that predicts **monthly rainfall in Trincomalee, Sri 
 The model is built using **Random Forest Regression** and deployed via a **Streamlit web application**.
 
 
-# Project Overview
+## Project Overview
 
 Rainfall prediction is essential for:
 
@@ -16,7 +16,7 @@ Rainfall prediction is essential for:
 This project uses meteorological features such as temperature, radiation, evapotranspiration, and previous month rainfall to predict monthly rainfall amounts.
 
 
-# Project Structure
+## Project Structure
 
 Trincomalee_Rainfall_Prediction/
 │
@@ -49,19 +49,19 @@ Trincomalee_Rainfall_Prediction/
 
 
 
-# Dataset Information
+## Dataset Information
 
-# Data Source
+### Data Source
 The dataset utilized in this study was collected from publicly accessible databases. The selected dataset includes climate-related observations from selected cities in Sri Lanka spanning the period between January 2010 and January 2023.
 
-# Dataset Size
+### Dataset Size
 The complete dataset consists of 147,481 observations(rows) collected from selected cities in Sri Lanka. After filtering the data for Trincomalee city, a total of 4,915 records were retained for analysis.
  
 
-# Target Variable
+### Target Variable
 - `rain_sum` → Monthly rainfall (mm)
 
-# Features Used
+### Features Used
 - `month`
 - `year`
 - `rainfall_lag1`
@@ -71,7 +71,7 @@ The complete dataset consists of 147,481 observations(rows) collected from selec
 - `elevation`
 
 
-# Data Preprocessing
+## Data Preprocessing
 
 - Filtered dataset for **Trincomalee**
 - Removed missing values
@@ -79,11 +79,11 @@ The complete dataset consists of 147,481 observations(rows) collected from selec
 - No normalization required (tree-based model)
 
 
-# Model Used
+## Model Used
 
 Algorithm: Random Forest Regressor  
 
-# Hyperparameters:
+### Hyperparameters:
 - `n_estimators = 100`
 - `random_state = 42`
 
@@ -96,7 +96,7 @@ Random Forest was chosen because:
 
 
 
-#  Model Evaluation
+##  Model Evaluation
 
 The model was evaluated using:
 
@@ -104,7 +104,7 @@ The model was evaluated using:
 - RMSE (Root Mean Squared Error)
 - R² Score
 
-#  Results
+###  Results
 
 | Metric | Value |
 |--------|--------|
@@ -119,7 +119,7 @@ The model was evaluated using:
 
 
 
-# Model Explainability
+### Model Explainability
 
 Feature importance analysis shows that:
 
@@ -130,18 +130,18 @@ Feature importance analysis shows that:
 
 ##  Running the Project
 
-# Clone Repository
+### Clone Repository
 
 git clone <your-repository-link>
 cd Trincomalee_Rainfall_Prediction
 
-# Install Requirments
+### Install Requirments
 
 pip install -r requirements.txt
 
-# Train Model
+### Train Model
 python main.py
 
-# Run Steamlit App
+### Run Steamlit App
 python -m streamlit run app/app.py
 
