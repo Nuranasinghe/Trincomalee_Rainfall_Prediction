@@ -119,7 +119,7 @@ The model was evaluated using:
 
 
 
-## 🧠 Model Explainability
+# Model Explainability
 
 Feature importance analysis shows that:
 
